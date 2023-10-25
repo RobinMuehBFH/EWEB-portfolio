@@ -2,25 +2,28 @@
 .landing-page-wrapper {
   margin:0;
   background-color: black;
+  height: 100%;
 }
 
 /* wave */
 .wave-wrapper{
-  max-height: 20vw;
+  height: 20%;
 }
 
 /* title and button wrapper */
 .title-container {
   width: 100vw;
-  height: 40vh;
+  height: 80%;
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 /* title text */
 .shadows {
+  margin: 100px;
   position: relative;
   text-transform: uppercase;
   text-shadow: -3px 1px 20px #ced0d3;
