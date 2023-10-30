@@ -1,0 +1,104 @@
+ /* --------- title --------- */
+ .title-wrapper {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }    
+
+ .shadows {
+    margin: 0 0 0 20vh;
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: -3px 1px 2px #ced0d3;
+    color: white;
+    letter-spacing: -0.05em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    transition: all 0.25s ease-out;
+    
+}
+ 
+ /* --------- Input Form --------- */
+
+ .form-wrapper{
+ /* form wrapper */
+ display: block;
+ }
+
+.login-form {
+  margin: 10vh auto;
+  width: 95%;
+  max-width: 700px;
+  font-family: 'Muli', sans-serif;
+}
+
+label {
+  font-size: 18px;
+  visibility:hidden;
+}
+
+input,select,
+textarea {
+  font-weight: normal;
+  background-color: black;
+  font-size: 0.9em;
+  line-height: 1.25em;
+  padding: 16px 0;
+  width: 100%;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  outline: none;
+  -webkit-transition: border 0.3s ease, color 0.3s ease;
+  -moz-transition: border 0.3s ease, color 0.3s ease;
+  -o-transition: border 0.3s ease, color 0.3s ease;
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+input:focus {
+  border-bottom-color: #1C1D21;
+  color: #fff;
+}
+
+textarea:focus {
+  border-bottom: solid 2px #1C1D21;
+}
+
+
+ /* --------- Button --------- */
+ .button-wrapper{
+    margin: 3vh 0 0 0 ;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .button {
+    font: 900 0.8rem/0.8rem "Muli", sans-serif;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    padding: 1rem 1.6rem;
+    margin: 0.4rem;
+    border-radius: 0.2rem;
+    transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  .button.b1 {
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all .5s ease-out;
+  }
+  .button.b1:hover {
+    transform: translateY(1px);
+    background: white;
+    transition: all .5s ease-out;
+    color: #000;
+  }
+
+  
