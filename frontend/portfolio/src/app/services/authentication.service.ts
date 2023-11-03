@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {BehaviorSubject, catchError, map, throwError} from "rxjs";
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class AuthenticationService {
   private currentUserObservable = this.currentUserSource.asObservable();
   private currentUser: any | undefined;
 
-  constructor(public http: HttpClient) {
+  constructor(public http: HttpClient, private router: Router) {
     if (sessionStorage.getItem('currentUser') === "undefined" || sessionStorage.getItem('currentUser') === null) {
     }
     else {
@@ -45,6 +46,7 @@ export class AuthenticationService {
     sessionStorage.removeItem('currentUser');
     sessionStorage.clear();
     this.currentUserSource.next(undefined);
+    this.router.navigate(['']);
   }
 
   public register(checkoutForm: any){

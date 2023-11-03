@@ -9,12 +9,17 @@ import { LoginComponent } from './components/login/login.component';
 import {RouterModule} from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    LoginComponent
+    LoginComponent,
+    AboutMeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

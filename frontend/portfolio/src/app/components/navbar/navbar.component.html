@@ -1,0 +1,42 @@
+<nav>
+    <div class="logo">
+        <div class="title-wrapper">
+            <div class="shadows">
+                <span>P</span>
+                <span>O</span>
+                <span>R</span>
+                <span>T</span>
+                <span>F</span>
+                <span>O</span>
+                <span>L</span>
+                <span>I</span>
+                <span>O</span>
+                <span>_</span>
+                <span>S</span>
+                <span>E</span>
+                <span>I</span>
+                <span>T</span>
+                <span>E</span>
+            </div>
+        </div>
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <div class="li-container">
+            <li><a [routerLink]="'/inserat'">Über mich</a></li>
+        </div>
+        <div class="li-container">
+            <li><a [routerLink]="'/nachhilfe'">Meine Skills</a></li>
+        </div>
+        <div class="li-container">
+            <li><button *ngIf="!this.authenticationService.getCurrentUser()" [routerLink]="'/login'" class="login-button">Login</button></li>
+        </div>
+        <div class="li-container" >
+            <li><button *ngIf="this.authenticationService.getCurrentUser()" (click)="this.logout()" class="login-button">Logout</button></li>
+        </div>
+    </ul>
+</nav>

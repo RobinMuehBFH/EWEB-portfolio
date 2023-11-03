@@ -21,13 +21,13 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     if(this.authenticationService.getCurrentUser()){
-      this.router.navigate(['overview']);
+      this.router.navigate(['login']);
     }
   }
 
   public login(){
-    this.authenticationService.login(this.checkoutForm).subscribe((_) => {
-      this.router.navigate(['/overview']);
+    this.authenticationService.login(this.checkoutForm).subscribe((_ : any) => {
+      this.router.navigate(['about-me']);
     });
   }
 }
