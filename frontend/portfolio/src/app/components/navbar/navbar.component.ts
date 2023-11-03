@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from 'src/app/services/authentication.service';
+import { CommonFunctionsService } from 'src/app/services/common-functions.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +11,7 @@ export class NavbarComponent implements OnInit {
   private user: any;
   reload: boolean | undefined;
 
-  constructor(public authenticationService: AuthenticationService) { }
+  constructor(public authenticationService: AuthenticationService, public commonFunctionsService: CommonFunctionsService) { }
 
   ngOnInit(): void {
   const hamburger = document.querySelector(".hamburger");

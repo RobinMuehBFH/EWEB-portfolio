@@ -200,7 +200,7 @@ nav{
   }
   /*Animating Hamburger Icon on Click*/
   .toggle .line1{
-    transform: tate(-45deg) translate(-5px,6px);
+    transform: rotate(-45deg) translate(-5px,6px);
   }
   .toggle .line2{
     transition: all 0.7s ease;
