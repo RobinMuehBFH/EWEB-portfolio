@@ -11,3 +11,4 @@ export class AppComponent {
   title = 'portfolio';
   constructor(public authenticationService: AuthenticationService, public commonFunctionsService: CommonFunctionsService) { }
 }
+
