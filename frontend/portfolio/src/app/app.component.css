@@ -8,5 +8,5 @@ body{
 }
 
 .bodypart-no-navbar{
-    display: block;
+    display: contents;
 }
