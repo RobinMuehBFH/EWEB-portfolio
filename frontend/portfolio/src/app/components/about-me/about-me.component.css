@@ -1,91 +1,190 @@
 .about-me-wrapper{
     margin-left: 20px;
     padding-left: 1vw;
+    padding-bottom: 3vw;
     color: #ffffff;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 5em;
     font-size: 18px;
+    flex-direction: column;
+    justify-items: center;
+    margin-right: 20px;
+    padding-right: 1vw;
 }
 
-.content-box{
-    width: 50%;
-}
-
-.shadows{
+/* ------------------------------ TITLE BOX ------------------------------ */
+.title-box .shadows{
     position: relative;
     text-transform: uppercase;
     color: white;
+    text-shadow: -3px 1px 15px #ced0d3;
     letter-spacing: -0.05em;
     font-family: 'Anton', Arial, sans-serif;
     user-select: none;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 270px;
     transition: all 0.5s ease-out;
 }
 
-
-/* 1 BOX LEFT */
-
-.first-box-left{
+.title-box{
+    margin-top: 200px;
+    height: 100%;
     display: flex;
-    margin-top: 5em;
-    flex-basis: 100%;
-}
-
-.first-box-left .content-text{
-    width: 80%;
-}
-
-.first-box-left .content-header{
-    margin-bottom: 20px;
-}
-
-
-/* 1 BOX RIGHT */
-.first-box-right{
-    display: flex;
-    justify-content: end;
-    flex-basis: 100%;
-}
-
-.first-box-right .content-box{
-    display: flex;
-    justify-content: end;
     flex-direction: column;
-}
-
-.first-box-right .content-img{
-    display: flex;
-    justify-content: start;
-    align-items: baseline;
-    margin-bottom: 20px;
-}
-
-.first-box-right .content-img img{
-    max-width: 70%;
-    
-}
-
-.first-box-right .content-header{
-    margin-bottom: 20px;
-}
-
-.first-box-right .content-text{
-    max-width: 70%;
-    
-}
-
-
-.second-box-left{
-    display: flex;
+    gap: 270px;
     flex-basis: 100%;
 }
 
+/* ------------------------------ CONTENT BOX ------------------------------ */
+/* tbd select good font for text*/
+.content-box .plain-text{
+    font-size: 35px;
+    line-height: 35px;
+    font-family: 'Didact Gothic', sans-serif;
+}
 
+.content-box{
+    margin-top: 400px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 120px;
+    border-bottom: solid;
+    border-color: #ced0d3;
+}
+
+.content-left-wrapper{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content-middle-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    padding-right: 1vw;
+}
+
+.content-right-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-left{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.content-middle{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+
+.content-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+/* ------------------------------ IMAGE BOX ------------------------------ */
+
+.image-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 200px;
+}
+
+.image-left-wrapper{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image-right-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-title{
+    font-size: 35px;
+    font-family: Anton, Arial, Helvetica, sans-serif;
+    letter-spacing: -0.05em;
+    text-shadow: -3px 1px 15px #ced0d3;
+}
+
+.image-left {
+    width: 60%;
+}
+
+.image-left img{
+    max-width: 60%;
+}
+
+.image-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60%;
+}
+
+.image-right img{
+    width: 60%;
+}
+/* ------------------------------ MEDIA SCREEN 800px------------------------------ */
 @media screen and (max-width: 800px){
-    .content-box{
-        width: 100%;
+    /* ----------- TITLE BOX ----------- */
+    .title-box .shadows{
+        font-size: 250px;
     }
+
+    .title-box{
+        gap: 210px;
+        margin-top: 190px;
+    }
+    
+    /* ----------- CONTENT BOX ----------- */
+    .content-box .plain-text{
+        font-size: 30px;
+        line-height: 27px;
+    }
+    
+    .content-box{
+        margin-top: 300px;
+        gap: 30px;
+    }
+
+    /* ----------- IMAGE BOX ----------- */
+    
+
+}
+
+/* ------------------------------ MEDIA SCREEN 570px------------------------------ */
+
+@media screen and (max-width: 570px){
+    .title-box .shadows{
+        font-size: 150px;
+    }
+
+    .title-box{
+        gap: 120px;
+        margin-top: 130px;
+    }
+
+    /* ----------- CONTENT BOX ----------- */
+    
+    .content-box .plain-text{
+        font-size: 20px;
+        line-height: 17px;
+    }
+    
+    .content-box{
+        margin-top: 200px;
+        gap: 30px;
+    }
+
+    /* ----------- IMAGE BOX ----------- */
 }
