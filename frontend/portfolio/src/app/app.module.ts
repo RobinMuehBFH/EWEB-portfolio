@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { BilderGalerieComponent } from './components/bilder-galerie/bilder-galerie.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     LandingPageComponent,
     LoginComponent,
     AboutMeComponent,
-    NavbarComponent
+    NavbarComponent,
+    BilderGalerieComponent
   ],
   imports: [
     BrowserModule,

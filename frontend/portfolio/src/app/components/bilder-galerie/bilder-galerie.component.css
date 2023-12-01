@@ -1,4 +1,4 @@
-.about-me-wrapper{
+.bilder-galerie-wrapper{
     margin-left: 20px;
     padding-left: 1vw;
     padding-bottom: 3vw;
@@ -34,80 +34,12 @@
     flex-basis: 100%;
 }
 
-/* ------------------------------ CONTENT BOX ------------------------------ */
-/* tbd select good font for text*/
-.content-box .plain-text{
-    font-size: 35px;
-    line-height: 35px;
-    font-family: 'Oswald', sans-serif;
-    text-transform: lowercase;
-}
-
-.content-box .link{
-    font-size: 35px;
-    line-height: 35px;
-    text-decoration: underline;
-    text-transform: lowercase;
-    font-family: 'Oswald', sans-serif;
-    text-shadow: -3px 1px 15px #ced0d3;
-    letter-spacing: -0.05em;
-}
-
-.content-box .link a{
-    color: #ffffff;
-}
-
-.content-box{
-    margin-top: 400px;
-    padding-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 120px;
-}
-
-.content-left-wrapper{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.content-middle-wrapper{
-    display: flex;
-    justify-content: center;
-    margin-right: 20px;
-    padding-right: 1vw;
-}
-
-.content-right-wrapper{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.content-left{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-}
-
-.content-middle{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-}
-
-
-.content-right{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
 /* ------------------------------ IMAGE BOX ------------------------------ */
 
 .image-box{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 400px;
     gap: 200px;
 }
 
