@@ -12,6 +12,14 @@ export class CommonFunctionsService {
     return this.afterLastOccurrence(this.router.url, '/');
   }
 
+  public checkNavbar(){
+    console.log('dini muetter',this.getCurrentRoute());
+    if(this.getCurrentRoute() === '' || this.getCurrentRoute() === 'login'){
+      return false;
+    }
+    return true;
+  }
+
   private afterLastOccurrence(string: string, char: string,) {
     return string.slice(string.lastIndexOf(char) + 1);
   }

@@ -26,8 +26,13 @@ export class LoginComponent implements OnInit {
   }
 
   public login(){
-    this.authenticationService.login(this.checkoutForm).subscribe((_ : any) => {
+    if(this.checkoutForm.value.email === 'test' && this.checkoutForm.value.password === 'test'){
       this.router.navigate(['about-me']);
-    });
+    }
+    
+    // commented because backend for login will not be deployed
+    //this.authenticationService.login(this.checkoutForm).subscribe((_ : any) => {
+    //  this.router.navigate(['about-me']);
+    //});
   }
 }
