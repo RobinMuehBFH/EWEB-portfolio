@@ -6,6 +6,10 @@ body {
     height: 100%;
  }
 
+ body::-webkit-scrollbar {
+    display: none;
+}
+
 html {  
     height: 100%;
 }

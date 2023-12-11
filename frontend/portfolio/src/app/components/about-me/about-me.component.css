@@ -121,7 +121,7 @@
     justify-content: flex-end;
 }
 
-.img-title{
+.image-title{
     font-size: 35px;
     font-family: Anton, Arial, Helvetica, sans-serif;
     letter-spacing: -0.05em;
@@ -129,6 +129,26 @@
 }
 
 .image-left {
+    width: 60%;
+}
+
+.image-left img{
+    max-width: 60%;
+}
+
+.image-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60%;
+}
+
+.image-right img{
+    width: 60%;
+}
+
+.image-landscape {
     width: 60%;
 }
 
