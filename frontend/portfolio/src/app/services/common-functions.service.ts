@@ -13,7 +13,6 @@ export class CommonFunctionsService {
   }
 
   public checkNavbar(){
-    console.log('dini muetter',this.getCurrentRoute());
     if(this.getCurrentRoute() === '' || this.getCurrentRoute() === 'login'){
       return false;
     }
