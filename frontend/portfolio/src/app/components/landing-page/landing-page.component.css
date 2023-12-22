@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 
 .landing-page-wrapper {
   margin:0;
@@ -66,4 +68,21 @@
   transition: all .5s ease-out;
   color: #000;
   -webkit-box-shadow: 0px 0px 30px 1px rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1100px) {
+  .shadows {
+    font-size: 100px;
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .shadows {
+    font-size: 50px;
+  }  
+
+  svg{
+    height: 800px;
+  }
 }

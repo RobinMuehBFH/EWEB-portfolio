@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+ 
  /* --------- title --------- */
  .title-wrapper {
     width: 100vw;
@@ -100,5 +103,14 @@ textarea:focus {
     transition: all .5s ease-out;
     color: #000;
   }
+
+
+  @media screen and (max-width: 700px) {
+    .shadows {
+      margin: 0 0 0 2vh;
+      font-size: 40px;
+    }  
+  }
+  
 
   
