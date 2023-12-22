@@ -121,6 +121,10 @@
     text-transform: lowercase;
 }
 
+.plain-text .date{
+    font-size: 23px;
+}
+
 :root {
     --bg: #000000;
     --highlight1: #ED4264;

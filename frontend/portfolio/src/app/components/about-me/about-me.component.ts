@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonFunctionsService } from 'src/app/services/common-functions.service';
 
 @Component({
   selector: 'app-about-me',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
 
+  dogFact: any;
+  constructor(private commonFunctionService: CommonFunctionsService){}
+
+  ngOnInit(){
+    this.loadDogFact();
+  } 
+
+  public loadDogFact() {
+    this.commonFunctionService.getRandomDogFact().subscribe((data) => {
+      this.dogFact = data.facts[0];
+      console.log(this.dogFact);
+    });
+  }
 }

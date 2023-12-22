@@ -28,10 +28,12 @@
             <li><a [routerLink]="'/about-me'">Über mich</a></li>
         </div>
         <div class="li-container">
-            <li><a [routerLink]="'/nachhilfe'" (click)="this.commonFunctionsService.getCurrentRoute()">Meine Skills</a></li>
+            <li><a [routerLink]="'/bilder-galerie'" (click)="this.commonFunctionsService.getCurrentRoute()">Bilder Galerie</a></li>
         </div>
+        <!--
         <div class="li-container" >
             <li><button *ngIf="this.authenticationService.getCurrentUser()" (click)="this.logout()" class="login-button">Logout</button></li>
         </div>
+        -->
     </ul>
 </nav>

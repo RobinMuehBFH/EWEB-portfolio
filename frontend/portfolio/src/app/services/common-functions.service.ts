@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -6,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class CommonFunctionsService {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public http: HttpClient) { }
 
   public getCurrentRoute(){    
     return this.afterLastOccurrence(this.router.url, '/');
@@ -21,5 +22,9 @@ export class CommonFunctionsService {
 
   private afterLastOccurrence(string: string, char: string,) {
     return string.slice(string.lastIndexOf(char) + 1);
+  }
+
+  public getRandomDogFact() {
+    return this.http.get<any>("https://dog-api.kinduff.com/api/facts");
   }
 }
