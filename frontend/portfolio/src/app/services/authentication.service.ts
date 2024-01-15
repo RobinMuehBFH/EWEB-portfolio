@@ -59,25 +59,6 @@ export class AuthenticationService {
     );
   }
 
-  public uploadProfilePicutre(formdata: FormData) {
-    return this.http.post(this.api_url+"upload", formdata);
-  }
-
-  public updateProfilePicture(profilePicturePath: string, userId: number) {
-    return this.http.put<any>(this.api_url+"users/"+userId,{
-      profilePicturePath: profilePicturePath
-    });
-  }
-
-  public getAllCurrentUserInformation() {
-    const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${this.currentUser.jwt}`
-    });
-    const requestOptions = { headers: headers };
-    return this.http.get<any>(this.api_url+"users/me",requestOptions );
-  }
-
   private handleError(error: HttpErrorResponse) {
     if (error.status === 0) {
       // A client-side or network error occurred. Handle it accordingly.

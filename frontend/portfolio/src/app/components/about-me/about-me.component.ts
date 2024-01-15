@@ -18,7 +18,6 @@ export class AboutMeComponent {
   public loadDogFact() {
     this.commonFunctionService.getRandomDogFact().subscribe((data) => {
       this.dogFact = data.facts[0];
-      console.log(this.dogFact);
     });
   }
 }
