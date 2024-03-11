@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BilderGalerieComponent } from './components/bilder-galerie/bilder-galerie.component';
+import { ErapComponent } from './components/erap/erap.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { BilderGalerieComponent } from './components/bilder-galerie/bilder-galer
     LoginComponent,
     AboutMeComponent,
     NavbarComponent,
-    BilderGalerieComponent
+    BilderGalerieComponent,
+    ErapComponent
   ],
   imports: [
     BrowserModule,
